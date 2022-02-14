@@ -18,38 +18,38 @@ namespace ISM6225_Assignment_2_Spring_2022
         static void Main(string[] args)
         {
 
-            ////Question 1:
-            //Console.WriteLine("Question 1:");
-            //int[] nums1 = { 0, 1, 2, 3, 12 };
-            //Console.WriteLine("Enter the target number:");
-            //int target = Int32.Parse(Console.ReadLine());
-            //int pos = SearchInsert(nums1, target);
-            //Console.WriteLine("Insert Position of the target is : {0}", pos);
-            //Console.WriteLine("");
+            //Question 1:
+            Console.WriteLine("Question 1:");
+            int[] nums1 = { 0, 1, 2, 3, 12 };
+            Console.WriteLine("Enter the target number:");
+            int target = Int32.Parse(Console.ReadLine());
+            int pos = SearchInsert(nums1, target);
+            Console.WriteLine("Insert Position of the target is : {0}", pos);
+            Console.WriteLine("");
 
-            ////Question2:
-            //Console.WriteLine("Question 2");
-            //string paragraph =  "Bob hit a ball, the hit BALL flew far after it was hit.";
+            //Question2:
+            Console.WriteLine("Question 2");
+            string paragraph = "Bob hit a ball, the hit BALL flew far after it was hit.";
 
-            //string[] banned = { "hit" };
-            //string commonWord = MostCommonWord(paragraph, banned);
-            //Console.WriteLine("Most frequent word is {0}:", commonWord);
-            //Console.WriteLine();
+            string[] banned = { "hit" };
+            string commonWord = MostCommonWord(paragraph, banned);
+            Console.WriteLine("Most frequent word is {0}:", commonWord);
+            Console.WriteLine();
 
-            ////Question 3:
-            //Console.WriteLine("Question 3");
-            //int[] arr1 = { 2, 2, 3, 4 };
-            //int lucky_number = FindLucky(arr1);
-            //Console.WriteLine("The Lucky number in the given array is {0}", lucky_number);
-            //Console.WriteLine();
+            //Question 3:
+            Console.WriteLine("Question 3");
+            int[] arr1 = { 2, 2, 3, 4 };
+            int lucky_number = FindLucky(arr1);
+            Console.WriteLine("The Lucky number in the given array is {0}", lucky_number);
+            Console.WriteLine();
 
-            ////Question 4:
-            //Console.WriteLine("Question 4");
-            //string secret = "1807";
-            //string guess = "7810";
-            //string hint = GetHint(secret, guess);
-            //Console.WriteLine("Hint for the guess is :{0}", hint);
-            //Console.WriteLine();
+            //Question 4:
+            Console.WriteLine("Question 4");
+            string secret = "1807";
+            string guess = "7810";
+            string hint = GetHint(secret, guess);
+            Console.WriteLine("Hint for the guess is :{0}", hint);
+            Console.WriteLine();
 
 
             //Question 5:
@@ -63,18 +63,18 @@ namespace ISM6225_Assignment_2_Spring_2022
             }
             Console.WriteLine();
 
-            ////Question 6:
-            //Console.WriteLine("Question 6");
-            //int[] widths = new int[] { 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10 };
-            //string bulls_string9 = "abcdefghijklmnopqrstuvwxyz";
-            //List<int> lines = NumberOfLines(widths, bulls_string9);
-            //Console.WriteLine("Lines Required to print:");
-            //for (int i = 0; i < lines.Count; i++)
-            //{
-            //    Console.Write(lines[i] + "\t");
-            //}
-            //Console.WriteLine();
-            //Console.WriteLine();
+            //Question 6:
+            Console.WriteLine("Question 6");
+            int[] widths = new int[] { 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10 };
+            string bulls_string9 = "abcdefghijklmnopqrstuvwxyz";
+            List<int> lines = NumberOfLines(widths, bulls_string9);
+            Console.WriteLine("Lines Required to print:");
+            for (int i = 0; i < lines.Count; i++)
+            {
+                Console.Write(lines[i] + "\t");
+            }
+            Console.WriteLine();
+            Console.WriteLine();
 
             //Question 7:
             Console.WriteLine("Question 7:");
@@ -89,28 +89,28 @@ namespace ISM6225_Assignment_2_Spring_2022
             Console.WriteLine();
 
 
-            ////Question 8:
-            //Console.WriteLine("Question 8");
-            //string[] bulls_string13 = { "gin", "zen", "gig", "msg" };
-            //int diffwords = UniqueMorseRepresentations(bulls_string13);
-            //Console.WriteLine("Number of with unique code are: {0}", diffwords);
-            //Console.WriteLine();
-            //Console.WriteLine();
+            //Question 8:
+            Console.WriteLine("Question 8");
+            string[] bulls_string13 = { "gin", "zen", "gig", "msg" };
+            int diffwords = UniqueMorseRepresentations(bulls_string13);
+            Console.WriteLine("Number of with unique code are: {0}", diffwords);
+            Console.WriteLine();
+            Console.WriteLine();
 
-            ////Question 9:
-            //Console.WriteLine("Question 9");
-            //int[,] grid = { { 0, 1, 2, 3, 4 }, { 24, 23, 22, 21, 5 }, { 12, 13, 14, 15, 16 }, { 11, 17, 18, 19, 20 }, { 10, 9, 8, 7, 6 } };
-            //int time = SwimInWater(grid);
-            //Console.WriteLine("Minimum time required is: {0}", time);
-            //Console.WriteLine();
+            //Question 9:
+            Console.WriteLine("Question 9");
+            int[,] grid = { { 0, 1, 2, 3, 4 }, { 24, 23, 22, 21, 5 }, { 12, 13, 14, 15, 16 }, { 11, 17, 18, 19, 20 }, { 10, 9, 8, 7, 6 } };
+            int time = SwimInWater(grid);
+            Console.WriteLine("Minimum time required is: {0}", time);
+            Console.WriteLine();
 
-            ////Question 10:
-            //Console.WriteLine("Question 10");
-            //string word1  = "horse";
-            //string word2 = "ros";
-            //int minLen = MinDistance( word1,  word2);
-            //Console.WriteLine("Minimum number of operations required are {0}", minLen);
-            //Console.WriteLine();
+            //Question 10:
+            Console.WriteLine("Question 10");
+            string word1 = "horse";
+            string word2 = "ros";
+            int minLen = MinDistance(word1, word2);
+            Console.WriteLine("Minimum number of operations required are {0}", minLen);
+            Console.WriteLine();
         }
     
 
@@ -403,17 +403,20 @@ namespace ISM6225_Assignment_2_Spring_2022
                 }
                 List<int> out_list = new List<int>();
 
-                while (start < input_list.Length)
+                while (start < input_list.Length)//runs as long as start is less than the length
                 {
-                    end = place[input_list[start]];
+                    end = place[input_list[start]];//refreshing the end
                     for (int i = start; i < end; i++)
                     {
-                        end = Math.Max(end, place[input_list[i]]);
+                        end = Math.Max(end, place[input_list[i]]);//updating the max value
                     }
-                    out_list.Add(end - start + 1);
-                    start = end + 1;
+                    out_list.Add(end - start + 1);//1 is added as list count from 0 
+                    start = end + 1;//finally start to end count is obtained
                 }
-                return out_list;
+                return out_list;//all the counts are updated
+                //self-reflection - letters seuence is updated so that last element of sequence can be found and a set of words can be found
+                //iterates only one time in the list so its O(n) time complexity
+
 
             }
             catch (Exception)
@@ -671,55 +674,38 @@ namespace ISM6225_Assignment_2_Spring_2022
 
         */
 
-        public static int MinDistance(string word1, string word2)
-        {
-            try
+            static int minDist(String ele1, String ele2, int len1, int len2)
             {
-                //write your code here.
-                return 0;
-
-            }
-            catch (Exception)
-            {
-
-                throw;
-            }
-            static int minDistanceSol(String word1, String word2, int size1, int size2)
-            {
-                // Return the size of the second string if the first string is empty
-                if (size1 == 0)
-                    return size2;
+                if (len1 == 0)//second string size is given when first is empty
+                    return len2;
 
                 // Return the size of the first string if the second string is empty
-                if (size2 == 0)
-                    return size1;
+                if (len2 == 0)//first string size is given when second is empty
+                return len1;
 
-                // If last characters of two strings are same, consider the rest of the strings.
-                if (word1[size1 - 1] == word2[size2 - 1])
-                    return minDistanceSol(word1, word2, size1 - 1, size2 - 1);
+                if (ele1[len1 - 1] == ele2[len2 - 1])//if last 2 are same then
+                    return minDist(ele1, ele2, len1 - 1, len2 - 1);
 
-                // If last characters are not same, perform recursion for insert, replace and remove.
 
-                return min(minDistanceSol(word1, word2, size1, size2 - 1), minDistanceSol(word1, word2, size1 - 1, size2), minDistanceSol(word1, word2, size1 - 1, size2 - 1)) + 1;
+                return min(minDist(ele1, ele2, len1, len2 - 1), minDist(ele1, ele2, len1 - 1, len2), minDist(ele1, ele2, len1 - 1, len2 - 1)) + 1;
             }
 
-            static int min(int a, int b, int c)
+            static int min(int a1, int a2, int a3)
             {
-                //Finding the minimum of the three operations performed in the minDistanceSol method
-                if (a <= b && a <= c)
-                    return a;
-                if (b <= a && b <= c)
-                    return b;
+                if (a1 <= a2 && a1 <= a3)
+                    return a1;
+                if (a2 <= a1 && a2 <= a3)
+                    return a2;
                 else
-                    return c;
+                    return a3;
             }
 
-            public static int MinDistance(string word1, string word2)
+            static int MinDistance(string word1, string word2)
             {
                 try
                 {
                     //write your code here.
-                    int distance = minDistanceSol(word1, word2, word1.Length, word2.Length);
+                    int distance = minDist(word1, word2, word1.Length, word2.Length);
 
                     return distance;
 
@@ -731,8 +717,6 @@ namespace ISM6225_Assignment_2_Spring_2022
                 }
 
 
-
-
             }
 
 
@@ -741,4 +725,3 @@ namespace ISM6225_Assignment_2_Spring_2022
 
         }
     }
-}
