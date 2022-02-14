@@ -8,6 +8,8 @@ WRITE YOUR CODE IN THE RESPECTIVE QUESTION FUNCTION BLOCK
 
 using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Text.RegularExpressions;
 
 namespace ISM6225_Assignment_2_Spring_2022
 {
@@ -16,37 +18,38 @@ namespace ISM6225_Assignment_2_Spring_2022
         static void Main(string[] args)
         {
 
-            //Question 1:
-            Console.WriteLine("Question 1:");
-            int[] nums1 = { 0, 1, 2, 3, 12 };
-            Console.WriteLine("Enter the target number:");
-            int target = Int32.Parse(Console.ReadLine());
-            int pos = SearchInsert(nums1, target);
-            Console.WriteLine("Insert Position of the target is : {0}", pos);
-            Console.WriteLine("");
+            ////Question 1:
+            //Console.WriteLine("Question 1:");
+            //int[] nums1 = { 0, 1, 2, 3, 12 };
+            //Console.WriteLine("Enter the target number:");
+            //int target = Int32.Parse(Console.ReadLine());
+            //int pos = SearchInsert(nums1, target);
+            //Console.WriteLine("Insert Position of the target is : {0}", pos);
+            //Console.WriteLine("");
 
-            //Question2:
-            Console.WriteLine("Question 2");
-            string paragraph = "Bob hit a ball, the hit BALL flew far after it was hit.";
-            string[] banned = { "hit" };
-            string commonWord = MostCommonWord(paragraph, banned);
-            Console.WriteLine("Most frequent word is {0}:", commonWord);
-            Console.WriteLine();
+            ////Question2:
+            //Console.WriteLine("Question 2");
+            //string paragraph =  "Bob hit a ball, the hit BALL flew far after it was hit.";
 
-            //Question 3:
-            Console.WriteLine("Question 3");
-            int[] arr1 = { 2, 2, 3, 4 };
-            int lucky_number = FindLucky(arr1);
-            Console.WriteLine("The Lucky number in the given array is {0}", lucky_number);
-            Console.WriteLine();
+            //string[] banned = { "hit" };
+            //string commonWord = MostCommonWord(paragraph, banned);
+            //Console.WriteLine("Most frequent word is {0}:", commonWord);
+            //Console.WriteLine();
 
-            //Question 4:
-            Console.WriteLine("Question 4");
-            string secret = "1807";
-            string guess = "7810";
-            string hint = GetHint(secret, guess);
-            Console.WriteLine("Hint for the guess is :{0}", hint);
-            Console.WriteLine();
+            ////Question 3:
+            //Console.WriteLine("Question 3");
+            //int[] arr1 = { 2, 2, 3, 4 };
+            //int lucky_number = FindLucky(arr1);
+            //Console.WriteLine("The Lucky number in the given array is {0}", lucky_number);
+            //Console.WriteLine();
+
+            ////Question 4:
+            //Console.WriteLine("Question 4");
+            //string secret = "1807";
+            //string guess = "7810";
+            //string hint = GetHint(secret, guess);
+            //Console.WriteLine("Hint for the guess is :{0}", hint);
+            //Console.WriteLine();
 
 
             //Question 5:
@@ -60,18 +63,18 @@ namespace ISM6225_Assignment_2_Spring_2022
             }
             Console.WriteLine();
 
-            //Question 6:
-            Console.WriteLine("Question 6");
-            int[] widths = new int[] { 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10 };
-            string bulls_string9 = "abcdefghijklmnopqrstuvwxyz";
-            List<int> lines = NumberOfLines(widths, bulls_string9);
-            Console.WriteLine("Lines Required to print:");
-            for (int i = 0; i < lines.Count; i++)
-            {
-                Console.Write(lines[i] + "\t");
-            }
-            Console.WriteLine();
-            Console.WriteLine();
+            ////Question 6:
+            //Console.WriteLine("Question 6");
+            //int[] widths = new int[] { 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10 };
+            //string bulls_string9 = "abcdefghijklmnopqrstuvwxyz";
+            //List<int> lines = NumberOfLines(widths, bulls_string9);
+            //Console.WriteLine("Lines Required to print:");
+            //for (int i = 0; i < lines.Count; i++)
+            //{
+            //    Console.Write(lines[i] + "\t");
+            //}
+            //Console.WriteLine();
+            //Console.WriteLine();
 
             //Question 7:
             Console.WriteLine("Question 7:");
@@ -86,28 +89,28 @@ namespace ISM6225_Assignment_2_Spring_2022
             Console.WriteLine();
 
 
-            //Question 8:
-            Console.WriteLine("Question 8");
-            string[] bulls_string13 = { "gin", "zen", "gig", "msg" };
-            int diffwords = UniqueMorseRepresentations(bulls_string13);
-            Console.WriteLine("Number of with unique code are: {0}", diffwords);
-            Console.WriteLine();
-            Console.WriteLine();
+            ////Question 8:
+            //Console.WriteLine("Question 8");
+            //string[] bulls_string13 = { "gin", "zen", "gig", "msg" };
+            //int diffwords = UniqueMorseRepresentations(bulls_string13);
+            //Console.WriteLine("Number of with unique code are: {0}", diffwords);
+            //Console.WriteLine();
+            //Console.WriteLine();
 
-            //Question 9:
-            Console.WriteLine("Question 9");
-            int[,] grid = { { 0, 1, 2, 3, 4 }, { 24, 23, 22, 21, 5 }, { 12, 13, 14, 15, 16 }, { 11, 17, 18, 19, 20 }, { 10, 9, 8, 7, 6 } };
-            int time = SwimInWater(grid);
-            Console.WriteLine("Minimum time required is: {0}", time);
-            Console.WriteLine();
+            ////Question 9:
+            //Console.WriteLine("Question 9");
+            //int[,] grid = { { 0, 1, 2, 3, 4 }, { 24, 23, 22, 21, 5 }, { 12, 13, 14, 15, 16 }, { 11, 17, 18, 19, 20 }, { 10, 9, 8, 7, 6 } };
+            //int time = SwimInWater(grid);
+            //Console.WriteLine("Minimum time required is: {0}", time);
+            //Console.WriteLine();
 
-            //Question 10:
-            Console.WriteLine("Question 10");
-            string word1  = "horse";
-            string word2 = "ros";
-            int minLen = MinDistance( word1,  word2);
-            Console.WriteLine("Minimum number of operations required are {0}", minLen);
-            Console.WriteLine();
+            ////Question 10:
+            //Console.WriteLine("Question 10");
+            //string word1  = "horse";
+            //string word2 = "ros";
+            //int minLen = MinDistance( word1,  word2);
+            //Console.WriteLine("Minimum number of operations required are {0}", minLen);
+            //Console.WriteLine();
         }
     
 
@@ -133,7 +136,44 @@ namespace ISM6225_Assignment_2_Spring_2022
             try
             {
                 //Write your Code here.
-                return -1;
+                //initializing variables
+                int a = 0;
+                int b = nums.Length;
+                int mid = 0;  // calculating middle3 position
+                int check = 0; //if target found check gets 1 else checks for insert position
+                while (a < b)
+                {
+                    if (target < nums[a]) //edge case when target less than least element
+                    {
+                        mid = 0;
+                        break;
+                    }
+                    mid = (a + b) / 2;
+                    if (nums[mid] == target)
+                    {
+
+                        check = 1;
+                        break;
+                    }
+                    else if ((nums[mid] > target) && (b - a) != 1) //b-a == 1 means a and b traveresed entire array
+                    {
+                        b = mid;
+
+                    }
+                    else if ((nums[mid] < target) && (b - a) != 1)
+                    {
+
+                        a = mid;
+                    }
+                    else if (b - a == 1 && check == 0)//calculates insert position when a and b traversed
+                    {
+                        mid = b;
+                        break;
+                    }
+                }
+                     return mid;
+                //self reflection: Edge cases should be kept in mind and also insert position code should be added to binary search
+
             }
             catch (Exception)
             {
@@ -163,15 +203,48 @@ namespace ISM6225_Assignment_2_Spring_2022
         {
             try
             {
-                
-                //write your code here.
+                int max = 0;
+                string word = "";
+                paragraph = paragraph.ToLower();//making paragraph to lower case
+                string para_new = Regex.Replace(paragraph, "[/.,<>?';:!@]"," ");//removing all special characters
+                string[] para_list = para_new.Split(" ");
+                var word_dict = new Dictionary <string, int>();
 
-                return "";
+                foreach (var name in para_list)
+                {
+
+                    if (!banned.Contains(name) && word_dict.ContainsKey(name))//if word is not in banned list then it goes into dictionary
+                    {
+                        word_dict[name]++;
+                        if (max < word_dict[name])//checking for max count and its word
+                        {
+                            max = word_dict[name];
+                            word = name;
+                    
+                        }
+                    }
+                    else
+                    {
+                        word_dict[name] = 1;
+
+                        if (max < word_dict[name])//checking again to eliminate the edge case
+                        {
+                            max = word_dict[name];
+                            word = name;
+
+                        }
+
+                    }
+                
+                //self reflection - creating dictionaries and checking for a word and max frequency
+                }
+                    
+                return word;
             }
             catch (Exception)
             {
 
-                throw;
+                throw; 
             }
         }
 
@@ -200,8 +273,39 @@ namespace ISM6225_Assignment_2_Spring_2022
         {
             try
             {
-                //write your code here.
-                return 0;
+                //write your code here
+
+                var new_arr = new Dictionary<int, int>();//taking empty dictionary for key value pairs of numbers
+                int max = -1; //initializing to -1 covers the edge cases when no element is matched
+                foreach (var num in arr)//chcecking num in arr and adding to list the number of occurences
+                {
+
+                    if (new_arr.ContainsKey(num))
+                    {
+                        new_arr[num]++;
+                    }
+                    else
+                    {
+                        new_arr[num] = 1;
+
+                    }
+                }
+
+                foreach (KeyValuePair<int,int> lnum in new_arr)//iterating in the dictionary for chceckin gthe lucky num
+                {
+                    if (lnum.Key == lnum.Value)
+                    {
+                        if (lnum.Value>max)//only max value should be retured 
+                        {
+                            max = lnum.Value;
+                        }
+                    }
+                }
+
+
+                return max;
+                //self - reflection is creating dictionaries and finding occurances of words
+
             }
             catch (Exception)
             {
@@ -236,7 +340,31 @@ namespace ISM6225_Assignment_2_Spring_2022
             try
             {
                 //write your code here.
-                return "";
+                int a = 0, b = 0;
+                string res = "", new_s = "", new_g = "";
+                for (int i = 0; i < secret.Length; i++)
+                {
+                    if (secret[i] == guess[i])//if element is matched we are removing that element and increasing the a
+                    {
+                        a++;
+                        new_s = secret.Remove(i, 1);//removing element and creating new secret and guess
+                        new_g = guess.Remove(i, 1);
+                    }
+                }
+
+                for (int p = 0; p < new_s.Length; p++)
+                {
+                    if (new_g.Contains(new_s[p]))//if element is in new guess then its removed to ensure duplicates and remove edge case
+                    {
+                        b++;
+                        int x = new_g.IndexOf(new_s[p]);
+                        new_g = new_g.Remove(x, 1);
+                    }
+                }
+                res = a + "A" + b + "B";
+                return res;
+                //edge case- new strings are created to ensure no element is checked repeatedly
+                //self reflection - learnt elements iteration in strings and its concatination and new method (Contains) 
             }
             catch (Exception)
             {
@@ -265,9 +393,28 @@ namespace ISM6225_Assignment_2_Spring_2022
         {
             try
             {
-                //write your code here.
-                
-                return new List<int>() {} ;
+                int start = 0, end = 0;
+                int[] place = new int[1000];
+                char[] input_list = s.ToCharArray();
+
+                for (int i = 0; i < input_list.Length; i++)
+                {
+                    place[input_list[i]] = i;
+                }
+                List<int> out_list = new List<int>();
+
+                while (start < input_list.Length)
+                {
+                    end = place[input_list[start]];
+                    for (int i = start; i < end; i++)
+                    {
+                        end = Math.Max(end, place[input_list[i]]);
+                    }
+                    out_list.Add(end - start + 1);
+                    start = end + 1;
+                }
+                return out_list;
+
             }
             catch (Exception)
             {
@@ -312,7 +459,21 @@ namespace ISM6225_Assignment_2_Spring_2022
             {
                 //write your code here.
 
-                return new List<int>() { };
+                int line = 1;
+                int len = 0;
+                foreach (char x in s)// iterating through entire length
+                {
+                    int w_len = widths[Convert.ToInt32(x) - Convert.ToInt32('a')];//ascii value of (x - 65) as a is 65
+                    len += w_len;//adding all width to len and when its greater than 100
+                    if (len > 100)
+                    {
+                        line += 1;//increasing the line
+                        len = w_len;//last w_len is assigned to len ie the first char in new line
+                    }
+                }
+                return new List<int>() { line, len };
+                //self reflection - edge cases such as when it gets nto new line the element's width in last line ending should be added 
+
             }
             catch (Exception)
             {
@@ -351,7 +512,30 @@ namespace ISM6225_Assignment_2_Spring_2022
             {
                 //write your code here.
 
-                return false;
+                int str_length = bulls_string10.Length;
+                if (str_length % 2 != 0)//clearing edge cases and others simply when length is not even it means improper closing of brackets
+                {
+                    return false;
+                }
+                List<char> ele_list = new List<char> { };
+                char[] end_list = new char[] { ')', '}', ']' };//list for ending brackets
+
+                for (int i = 0; i < str_length; i++)
+                {
+                    if (bulls_string10[i] == '(') { ele_list.Insert(0, ')'); }//inserting the respective elements closing bracket in list at first position
+                    else if (bulls_string10[i] == '{') { ele_list.Insert(0, '}'); }
+                    else if (bulls_string10[i] == '[') { ele_list.Insert(0, ']'); }
+                    else if (end_list.Contains(bulls_string10[i]) && ele_list.Count > 0 && bulls_string10[i] == ele_list[0])
+                        //if its a closing bracket and its in the first position of list and to remove edge case checking if atleast one elemenet is in ele_list 
+                    {
+                        ele_list.RemoveAt(0);//removing the closing bracket as this is in proper sequence
+                    }
+                    else { return false; }//says that sequence is not correct so immedffiately returns false
+                }
+                return ele_list.Count == 0;//after proper removing of all closing brackets in ele list final counts is 0
+                //self-reflection -> very good implementation of stack and keeping the sequence and checking all edge cases
+                //Most important is following the sequence
+
             }
             catch (Exception)
             {
@@ -394,7 +578,38 @@ namespace ISM6225_Assignment_2_Spring_2022
             {
                 //write your code here.
 
-                return 0;
+                int a = 97;//ascii of small a
+                var mor_dict = new Dictionary<string, string>();
+                //creating morse code list
+                string[] mor_list = new string[26] { ".-", "-...", "-.-.", "-..", ".", "..-.", "--.", "....", "..", ".---", "-.-", ".-..", "--", "-.", "---", ".--.", "--.-", ".-.", "...", "-", "..-", "...-", ".--", "-..-", "-.--", "--.." };
+                foreach (string i in mor_list)
+                {
+                    string ch = Convert.ToString(Convert.ToChar(a));//assigning key as a using ascii of small a = 97
+                    mor_dict[ch] = i;//key as small letters and value as morse code
+                    //Console.WriteLine(ch);
+                    a++;
+                }
+                string code = "";
+                int count = 0;
+                var given_list = new List<string>();
+                foreach (string ele in words)
+                {
+                    //Console.WriteLine(i.Length);
+                    for (int j = 0; j < ele.Length; j++)
+                    {
+                        code += mor_dict[Convert.ToString(ele[j])];//code is updated for a particular word
+                    }
+                    if (!given_list.Contains(code))//checking if the code is unique only then it will add in list
+                    {
+                        given_list.Add(code);
+                        count++; // all unique elements are counted
+                    }
+                    code = "";//again making code to null so that new word starts fresh in next iteration
+                }
+
+                return count;
+                //self reflection - assigning key value pairs and creating dictionaries.
+                ////Also adding counter for unique elements and making code to null after each iteration
             }
             catch (Exception)
             {
@@ -469,6 +684,61 @@ namespace ISM6225_Assignment_2_Spring_2022
 
                 throw;
             }
+            static int minDistanceSol(String word1, String word2, int size1, int size2)
+            {
+                // Return the size of the second string if the first string is empty
+                if (size1 == 0)
+                    return size2;
+
+                // Return the size of the first string if the second string is empty
+                if (size2 == 0)
+                    return size1;
+
+                // If last characters of two strings are same, consider the rest of the strings.
+                if (word1[size1 - 1] == word2[size2 - 1])
+                    return minDistanceSol(word1, word2, size1 - 1, size2 - 1);
+
+                // If last characters are not same, perform recursion for insert, replace and remove.
+
+                return min(minDistanceSol(word1, word2, size1, size2 - 1), minDistanceSol(word1, word2, size1 - 1, size2), minDistanceSol(word1, word2, size1 - 1, size2 - 1)) + 1;
+            }
+
+            static int min(int a, int b, int c)
+            {
+                //Finding the minimum of the three operations performed in the minDistanceSol method
+                if (a <= b && a <= c)
+                    return a;
+                if (b <= a && b <= c)
+                    return b;
+                else
+                    return c;
+            }
+
+            public static int MinDistance(string word1, string word2)
+            {
+                try
+                {
+                    //write your code here.
+                    int distance = minDistanceSol(word1, word2, word1.Length, word2.Length);
+
+                    return distance;
+
+                }
+                catch (Exception)
+                {
+
+                    throw;
+                }
+
+
+
+
+            }
+
+
+
+
+
         }
     }
 }
