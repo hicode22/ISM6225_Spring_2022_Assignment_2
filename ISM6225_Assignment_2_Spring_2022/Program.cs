@@ -676,12 +676,19 @@ namespace ISM6225_Assignment_2_Spring_2022
 
             static int minDist(String ele1, String ele2, int len1, int len2)
             {
+                //referred online resourses for this problem 
+                //very tough problem 
+                //
+                //edge cases when either words are empty
+                
                 if (len1 == 0)//second string size is given when first is empty
                     return len2;
 
                 // Return the size of the first string if the second string is empty
                 if (len2 == 0)//first string size is given when second is empty
                 return len1;
+
+
 
                 if (ele1[len1 - 1] == ele2[len2 - 1])//if last 2 are same then
                     return minDist(ele1, ele2, len1 - 1, len2 - 1);
